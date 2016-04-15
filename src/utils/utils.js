@@ -48,7 +48,9 @@ const Utils = {
 
   /** TODO Implement this method
    *
-   * areAnyNotesLeft - Checks the availability of notes for the amount specified for withdrawal.
+   * areAnyNotesLeft - Given a withdrawal amount and the notes available in the ATM machine,
+   * check the availability of each note type that you intend to withdraw (you will also need to calculate this)
+   * and subsequently check if the ATM machine can dispense these.
    *
    * @param  {Number} withdraw   - Amount to check
    * @param  {Object} notesContainer - Object of objects containing the count for each note
