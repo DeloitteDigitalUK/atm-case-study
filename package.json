@@ -6,7 +6,7 @@
   "scripts": {
     "build": "nwb build",
     "clean": "nwb clean",
-    "start": "nwb serve",
+    "start": "nwb clean && nwb build && nwb serve",
     "test-utils": "mocha --compilers js:babel-core/register test-utils/*.js",
     "test-utils:watch": "mocha --watch --compilers js:babel-core/register test-utils/*.js"
   },
@@ -14,15 +14,16 @@
     "babel-core": "5.8.34",
     "common-accessible-components": "^1.0.7",
     "history": "^2.0.1",
+    "lodash": "^4.12.0",
     "lodash-fp": "^0.10.4",
     "react": "0.14.x",
     "react-dom": "0.14.x",
     "react-router": "^2.0.1"
   },
   "devDependencies": {
-    "babel-eslint": "^5.0.0",
+    "babel-eslint": "latest",
     "chai": "^3.5.0",
-    "eslint": "^2.4.0",
+    "eslint": "2.4.0",
     "eslint-config-airbnb": "^6.2.0",
     "eslint-plugin-mocha": "^2.0.0",
     "eslint-plugin-react": "^4.2.3",
